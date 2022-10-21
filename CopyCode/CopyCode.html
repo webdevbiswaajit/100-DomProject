@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .back {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .back button {
+            border: 1px solid #000;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .input_box input {
+            outline: none;
+            margin-bottom: 10px;
+        }
+
+        #copyBtn {
+            border: #000;
+            padding: 5px 10px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="back" id="root">
+        <h2>Change The Background Color By clicking The Flowing Button</h2>
+        <div class="input_box">
+            <input id="output" type="text" value="#ffffff" disabled placeholder="#fff">
+            <button id="copyBtn">Copy</button>
+        </div>
+        <button id="changeBtn">CHANGE COLOR</button>
+    </div>
+
+    <script src="./coustom.js"></script>
+</body>
+
+</html>
